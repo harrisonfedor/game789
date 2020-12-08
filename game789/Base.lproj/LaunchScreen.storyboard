@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewSix" translatesAutoresizingMaskIntoConstraints="NO" id="EDx-y5-NYB">
+                                <rect key="frame" x="34" y="258.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="CIu-LV-PB8"/>
+                                    <constraint firstAttribute="width" constant="150" id="ksq-rz-Bab"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewSeven" translatesAutoresizingMaskIntoConstraints="NO" id="5tA-LG-b6g">
+                                <rect key="frame" x="199" y="258" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AzT-cN-nvy"/>
+                                    <constraint firstAttribute="height" constant="150" id="U0A-3f-g8v"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38956735847674567" green="0.38723461980323221" blue="0.39190009715025909" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5tA-LG-b6g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="86.5" id="S8P-sn-KvA"/>
+                            <constraint firstItem="5tA-LG-b6g" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eBn-eE-WYY"/>
+                            <constraint firstItem="EDx-y5-NYB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-78.5" id="u6M-G4-c8F"/>
+                            <constraint firstItem="EDx-y5-NYB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uPA-7Q-8YE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +48,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NewSeven" width="150" height="187"/>
+        <image name="NewSix" width="258" height="328"/>
+    </resources>
 </document>
