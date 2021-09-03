@@ -1,6 +1,6 @@
 # game789
 
-This game was created in May 2018 as a final project for AP Computer Science A during my Sophomore year of high school.
+This game was created in June 2018 as a final project for AP Computer Science A during my Sophomore year of high school.
 This is my first app created with Swift using a variety of online tutorials along with the Swift docs.
 
 "789" spawned from the classic joke "Why is six afraid of seven? Because seven ate nine." 
